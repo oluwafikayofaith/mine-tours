@@ -1,0 +1,27 @@
+.form {
+  margin: 4rem 6rem;
+  color: black;
+}
+.form form {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+.form input {
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  border: 1px solid black;
+  height: 2rem;
+  padding: 0 1rem;
+}
+.form textarea {
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid black;
+  padding: 0 1rem;
+}
+.form button {
+  display: inline;
+}

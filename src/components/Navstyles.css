@@ -1,0 +1,126 @@
+.navlogo {
+  cursor: pointer;
+  font-size: 2rem;
+}
+.navlist {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+}
+.navmenu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  align-items: center;
+  white-space: nowrap;
+}
+.navitems {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 5px 15px 0;
+  width: 95%;
+  height: 80px;
+  border-radius: 15px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.navlist i {
+  padding-right: 10px;
+}
+.navlist:hover {
+  background-color: #8ea8c3;
+  color: #312f2f;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.navsign {
+  display: none;
+}
+button:hover {
+  background-color: #8ea8c3;
+  color: #312f2f;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+button {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.menuicons {
+  display: none;
+}
+.menuicons i {
+  font-size: 1.4rem;
+  color: #312f2f;
+}
+@media screen and (max-width: 850px) {
+  .menuicons {
+    display: block;
+    cursor: pointer;
+  }
+  .navmenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #a6d9f7;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    align-items: stretch;
+    opacity: 0;
+    padding: 80px 0 30px 0;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .navmenu.active {
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+  }
+  .navlist {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+  }
+  .navlist:hover {
+    background-color: #09bc8a;
+    transition: none;
+  }
+  button {
+    display: none;
+  }
+  .navsign {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: auto;
+    border-radius: 6px;
+    width: 80%;
+    background-color: #09bc8a;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  .navitems {
+    z-index: 99;
+  }
+}

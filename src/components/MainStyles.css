@@ -1,0 +1,65 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.main-abt {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+.main-abt h1 {
+  padding-top: 4rem !important;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.maintext .hide {
+  display: none;
+}
+.maintext .show {
+  text-decoration: none;
+  background: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: black;
+}
+.maintext p {
+  font-size: 1.3rem;
+  color: white;
+  padding: 0.5rem 0 2rem 0;
+}
+.maintext h1 {
+  font-weight: bold;
+  font-size: 2.6rem;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.maintext {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+@media screen and (max-width: 555px) {
+  .maintext h1 {
+    padding: 10px 20px;
+  }
+  .maintext .show {
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: burlywood;
+  }
+  .maintext p {
+    font-size: 1rem;
+    padding: 0 0 2rem 0;
+  }
+}
